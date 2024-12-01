@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital@0;1&display=swap");
+
+body {
+  background-color: #303446;
+  font-family: "Sour Gummy", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #c6d0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player {
+  background-color: #414559;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 650px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.album-cover {
+  width: 160px;
+  height: 160px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 20px;
+  transition: 0.2s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.album-cover:hover {
+  scale: 1.07;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: 0.25s;
+}
+
+.player-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-title {
+  font-size: 1.9rem;
+  margin-bottom: 5px;
+}
+
+.track-artist {
+  font-size: 1.2rem;
+  color: #a5adce;
+  margin-bottom: 15px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background-color: #51576d;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  width: 1%;
+  height: 100%;
+  background-color: #8caaee;
+  border-radius: 3px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.volume-btn:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+
+.volume-btn {
+  font-size: 1.5rem;
+  background-color: #8caaee;
+  color: #303446;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.views {
+  height: 50px;
+  width: 70px;
+  background-color: #8caaee;
+  border-radius: 10px;
+  border: none;
+  color: #303446;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+.view {
+  padding-left: 10px;
+  font-family: "Sour Gummy", serif;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totaltime {
+  margin-right: 5px;
+}
+
+.views:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
